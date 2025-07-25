@@ -1,21 +1,195 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ----------------------
+   1) Desktop & up (base)
+   ---------------------- */
+
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #F5F8FF;
-  opacity: 100%;
-  scroll-behavior: smooth;
+.site-body {
+    background-color: #F5F8FF;
+    color: #000;
+    font-family: sans-serif;
 }
 
-body {
-  height: 100%;
+/* Header & Nav */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding-top: 30px;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-} */
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 150px;
+}
+
+.logo-img {
+    height: 48px;
+    width: auto;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #999;
+    transition: color 0.2s;
+}
+
+.menu-link:hover,
+.menu-link.active {
+    color: #111;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 120px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 150px;
+    gap: 0px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #111;
+}
+
+.hero-text p {
+    margin-top: 16px;
+    color: #555;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: #FB923C;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 355px;
+    max-width: 400px;
+    /* border-radius & shadow if desired */
+}
+
+/* -------------------------------------------------
+   2) Tablet (768px–991px)
+   ------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-nav {
+    padding: 0 16px;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .hero {
+    margin-top: 28px;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    padding: 0 16px;
+    gap: 28px;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/* -------------------------------------------------
+   3) Mobile (≤767px)
+   ------------------------------------------------- */
+@media (max-width: 767px) {
+  .site-nav {
+    padding: 0 16px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 28px;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    padding: 0 16px;
+    gap: 28px;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.25rem;
+  }
+}
