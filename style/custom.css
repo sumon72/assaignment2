@@ -274,6 +274,74 @@
     margin: 0 auto;
 }
 
+/* Offer Add Container Section */
+.offer-add-container {
+    display: flex;
+    gap: 28px;
+    padding: 0 150px;
+    margin-top: 119px;
+    height: 424px;
+}
+
+.offer-add-left,
+.offer-add-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.offer-add-left {
+    width: 30%;
+}
+
+.offer-add-right {
+    width: 70%;
+    justify-content: center;
+}
+
+.offer-item {
+    position: relative;
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.offer-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.offer-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.offer-text {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.offer-add-right .offer-text {
+    font-size: 1.5rem;
+}
+
+.shop-now-link {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
 /* -------------------------------------------------
    2) Tablet (768px–991px)
    ------------------------------------------------- */
@@ -344,6 +412,7 @@
 
     .latest-deal-container {
         padding: 80px 32px;
+        margin-top: 143px;
     }
 
     .latest-deal-text h1 {
@@ -353,6 +422,30 @@
     .latest-deal-text p {
         font-size: 1rem;
         line-height: 1.5;
+    }
+
+    /* Responsive Offer Add Section */
+    .offer-add-container {
+        flex-direction: column;
+        height: auto;
+        padding: 0 16px;
+        margin-top: 51px;
+    }
+
+    .offer-add-left,
+    .offer-add-right {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .offer-item {
+        height: auto;
+    }
+
+    .offer-item img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -430,6 +523,7 @@
 
     .latest-deal-container {
         padding: 60px 16px;
+        margin-top: 143px;
     }
 
     .latest-deal-text h1 {
@@ -439,5 +533,29 @@
     .latest-deal-text p {
         font-size: 0.95rem;
         line-height: 1.4;
+    }
+
+    /* Responsive Offer Add Section */
+    .offer-add-container {
+        flex-direction: column;
+        height: auto;
+        padding: 0 16px;
+        margin-top: 51px;
+    }
+
+    .offer-add-left,
+    .offer-add-right {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .offer-item {
+        height: auto;
+    }
+
+    .offer-item img {
+        width: 100%;
+        height: auto;
     }
 }
