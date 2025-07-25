@@ -1,0 +1,21 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F5F8FF;
+  opacity: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+} */
