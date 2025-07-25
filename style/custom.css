@@ -1,6 +1,6 @@
 /* ----------------------
-   1) Desktop & up (base)
-   ---------------------- */
+    1) Desktop & up (base)
+    ---------------------- */
 
 /* Reset & base */
 * {
@@ -342,9 +342,70 @@
     font-weight: 500;
 }
 
+/* Join Section */
+.join-container {
+    position: relative;
+    height: 533px;
+    margin-top: 120px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.join-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.join-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.join-text {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.join-overlay input[type="text"] {
+    width: 560px;
+    max-width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.join-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #FB923C;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.join-btn:hover {
+    background-color: #e06d24;
+}
+
+
+
 /* -------------------------------------------------
-   2) Tablet (768px–991px)
-   ------------------------------------------------- */
+    2) Tablet (768px–991px)
+    ------------------------------------------------- */
 @media (min-width: 768px) and (max-width: 991px) {
     .site-nav {
         padding: 0 16px;
@@ -447,11 +508,45 @@
         width: 100%;
         height: auto;
     }
+
+    /* Join Section - Tablet */
+    .join-container {
+        height: 400px;
+        margin-top: 80px;
+    }
+
+    .join-text {
+        font-size: 1.75rem;
+        line-height: 1.2; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        padding: 0 16px; 
+    }
+
+    .join-overlay input[type="text"] {
+        width: 80%;
+        padding: 12px 16px; 
+        border-radius: 4px; 
+        margin-bottom: 10px; 
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    .join-btn {
+        width: 80%; 
+        padding: 12px 16px; 
+        border-radius: 4px; 
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
 }
 
 /* -------------------------------------------------
-   3) Mobile (≤767px)
-   ------------------------------------------------- */
+    3) Mobile (≤767px)
+    ------------------------------------------------- */
 @media (max-width: 767px) {
     .site-nav {
         padding: 0 16px;
@@ -557,5 +652,40 @@
     .offer-item img {
         width: 100%;
         height: auto;
+    }
+
+    /* Join Section - Mobile */
+    .join-container {
+        height: 300px;
+        margin-top: 60px;
+    }
+
+    .join-text {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0 16px;
+    }
+
+    .join-overlay input[type="text"] {
+        width: 90%;
+        padding: 12px 16px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .join-btn {
+        width: 90%;
+        padding: 12px 16px;
+        border-radius: 4px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
