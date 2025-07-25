@@ -124,72 +124,173 @@
 .hero-image img {
     width: 100%;
     height: 355px;
-    max-width: 400px;
-    /* border-radius & shadow if desired */
+}
+
+/* Plants Section */
+.Plants {
+    margin-top: 120px;
+}
+
+.Plants-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 150px 49px;
+}
+
+.Plants-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 150px;
+}
+
+.Plants-text {
+    text-align: center;
+}
+
+.Plants-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.Plants-text p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.Plants-cards-container {
+    display: contents;
+}
+
+.Plants-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 16px;
+}
+
+.Plants-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.Plants-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 8px 0;
+    color: #111;
+}
+
+.Plants-price {
+    color: #FB923C;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.btn-plants {
+    background-color: #FB923C;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-plants:hover {
+    background-color: #e05a2f;
 }
 
 /* -------------------------------------------------
    2) Tablet (768px–991px)
    ------------------------------------------------- */
 @media (min-width: 768px) and (max-width: 991px) {
-  .site-nav {
-    padding: 0 16px;
-  }
+    .site-nav {
+        padding: 0 16px;
+    }
 
-  .menu {
-    display: flex;
-  }
+    .menu {
+        display: flex;
+    }
 
-  .hero {
-    margin-top: 28px;
-  }
+    .hero {
+        margin-top: 28px;
+    }
 
-  .hero-container {
-    flex-direction: column-reverse;
-    padding: 0 16px;
-    gap: 28px;
-  }
+    .hero-container {
+        flex-direction: column-reverse;
+        padding: 0 16px;
+        gap: 28px;
+    }
 
-  .hero-text,
-  .hero-image {
-    width: 100%;
-    max-width: 100%;
-  }
+    .hero-text,
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+    }
 
-  .hero-text h1 {
-    font-size: 2.25rem;
-  }
+    .hero-text h1 {
+        font-size: 2.25rem;
+    }
+
+    .Plants-text-container {
+        flex-direction: column;
+        padding: 0 16px 28px;
+    }
+
+    .Plants-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 16px;
+    }
 }
 
 /* -------------------------------------------------
    3) Mobile (≤767px)
    ------------------------------------------------- */
 @media (max-width: 767px) {
-  .site-nav {
-    padding: 0 16px;
-  }
+    .site-nav {
+        padding: 0 16px;
+    }
 
-  .menu {
-    display: none;
-  }
+    .menu {
+        display: none;
+    }
 
-  .hero {
-    margin-top: 28px;
-  }
+    .hero {
+        margin-top: 28px;
+    }
 
-  .hero-container {
-    flex-direction: column-reverse;
-    padding: 0 16px;
-    gap: 28px;
-  }
+    .hero-container {
+        flex-direction: column-reverse;
+        padding: 0 16px;
+        gap: 28px;
+    }
 
-  .hero-text,
-  .hero-image {
-    width: 100%;
-    max-width: 100%;
-  }
+    .hero-text,
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+    }
 
-  .hero-text h1 {
-    font-size: 2.25rem;
-  }
+    .hero-text h1 {
+        font-size: 2.25rem;
+    }
+
+    .Plants-text-container {
+        flex-direction: column;
+        padding: 0 16px 28px;
+    }
+
+    .Plants-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 16px;
+    }
 }
