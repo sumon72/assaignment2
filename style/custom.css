@@ -18,7 +18,6 @@
 
 /* Header & Nav */
 .site-header {
-    position: sticky;
     top: 0;
     z-index: 50;
     padding-top: 30px;
@@ -112,7 +111,7 @@
 }
 
 .highlight {
-    color: #FB923C;
+    color: #E95A08;
 }
 
 .hero-image {
@@ -190,13 +189,13 @@
 }
 
 .Plants-price {
-    color: #FB923C;
+    color: #E95A08;
     font-size: 1rem;
     margin-bottom: 12px;
 }
 
 .btn-plants {
-    background-color: #FB923C;
+    background-color: #E95A08;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -388,7 +387,7 @@
 .join-btn {
     padding: 12px 20px;
     font-size: 1rem;
-    background-color: #FB923C;
+    background-color: #E95A08;
     color: white;
     border: none;
     border-radius: 0 4px 4px 0;
@@ -452,7 +451,7 @@ footer {
 }
 
 .footer-menu li:hover {
-    color: #fb923c;
+    color: #E95A08;
 }
 
 .social-media-icon {
