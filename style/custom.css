@@ -211,11 +211,26 @@
 
 /* Plants Lover Section */
 .Plants-lover-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 0 150px;
     margin-top: 210px;
     height: 597px;
+}
+
+.badge-overlay {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+   
+}
+
+.Plants-badge-image {
+    height: 286px;
+    width: 286px;
 }
 
 .Plants-lover-imgsection {
@@ -518,6 +533,7 @@ footer {
         padding: 0 16px;
     }
 
+    /* plant lover section */
     .Plants-lover-container {
         flex-direction: column;
         padding: 0 16px;
@@ -544,6 +560,11 @@ footer {
         padding-left: 24px;
     }
 
+    .badge-overlay {
+        display: none;
+    }
+
+/* latest deal section */
     .latest-deal-container {
         padding: 80px 32px;
         margin-top: 143px;
@@ -689,7 +710,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         padding: 0 16px;
     }
-
+/* plan lover section  */
     .Plants-lover-container {
         flex-direction: column;
         padding: 0 16px;
@@ -720,6 +741,11 @@ footer {
         margin-bottom: 16px;
     }
 
+  .badge-overlay {
+        display: none;
+    }
+ 
+    /* latest deal section */
     .latest-deal-container {
         padding: 60px 16px;
         margin-top: 143px;
