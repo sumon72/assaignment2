@@ -253,6 +253,27 @@
     margin-bottom: 20px;
 }
 
+/* Latest Deal Section */
+.latest-deal-container {
+    padding: 0px 150px;
+    text-align: center;
+    margin-top: 134px;
+}
+
+.latest-deal-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.latest-deal-text p {
+    color: #555;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 /* -------------------------------------------------
    2) Tablet (768px–991px)
    ------------------------------------------------- */
@@ -319,6 +340,19 @@
     .Plants-lover-text ul {
         font-size: 1.2rem;
         padding-left: 24px;
+    }
+
+    .latest-deal-container {
+        padding: 80px 32px;
+    }
+
+    .latest-deal-text h1 {
+        font-size: 2rem;
+    }
+
+    .latest-deal-text p {
+        font-size: 1rem;
+        line-height: 1.5;
     }
 }
 
@@ -392,5 +426,18 @@
 
     .Plants-lover-text li {
         margin-bottom: 16px;
+    }
+
+    .latest-deal-container {
+        padding: 60px 16px;
+    }
+
+    .latest-deal-text h1 {
+        font-size: 1.75rem;
+    }
+
+    .latest-deal-text p {
+        font-size: 0.95rem;
+        line-height: 1.4;
     }
 }
